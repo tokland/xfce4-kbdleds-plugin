@@ -26,14 +26,14 @@
 
 #include <xkbleds.h>
 
-int xkb_leds[NUM_LEDS] = {0,0,0};
+int xkb_leds[NUM_LEDS] = {0,0};
 int xkb_state = -1;
 int old_xkb_state = 0;
 
 unsigned int states = 0, old_states = 0;
-int key_syms[NUM_LEDS] = {XK_Caps_Lock, XK_Num_Lock, XK_Scroll_Lock};
-char *lock_names[NUM_LEDS] = {"Caps Lock", "Num Lock", "Scroll Lock"};
-char short_lock_names[NUM_LEDS] = "cns";
+int key_syms[NUM_LEDS] = {XK_Caps_Lock, XK_Num_Lock};
+char *lock_names[NUM_LEDS] = {"Caps Lock", "Num Lock"};
+char short_lock_names[NUM_LEDS] = "cn";
 
 int i;
 int masks[NUM_LEDS]; /* NUM, CAPS, SCROLL: indicator mask, for XKB*/

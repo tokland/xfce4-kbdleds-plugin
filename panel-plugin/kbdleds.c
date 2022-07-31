@@ -230,7 +230,7 @@ void refresh() {
   int i;
   gchar *str;
   gchar *template_on="<span background=\"%s\" foreground=\"%s\">%c</span>";
-  gchar *template_off="%c";
+  gchar *template_off="";
   gchar *led_labels[NUM_LEDS + 1];
   gchar *tooltip_labels[NUM_LEDS + 1];
   gchar *on_off[2]={_("OFF"),_("ON")};

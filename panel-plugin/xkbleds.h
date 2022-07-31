@@ -22,7 +22,7 @@
 
 G_BEGIN_DECLS
 
-#define NUM_LEDS 3
+#define NUM_LEDS 2
 extern int xkb_leds[NUM_LEDS];
 extern int xkb_state;
 extern int old_xkb_state;
